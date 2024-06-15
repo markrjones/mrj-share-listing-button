@@ -3,7 +3,7 @@
    Plugin Name: Share Listings Button
    Plugin URI: 
    description: Adds a share button to those shown alongside a listing in the dashboard
-   Version: 0.1
+   Version: 0.2
    Author: Mark Jones
    Author URI: https://devlisteo.ownersclub.eu
    */

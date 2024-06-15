@@ -258,7 +258,7 @@ $max_num_pages = $data->ids->max_num_pages;
 
 										error_log($action_url);
 										if ($action == 'share'){
-											$action_url = get_permalink($listing->ID);
+											$action_url = site_url() . '/quickbook/?id=' . $listing_id;
 										}
 
 										echo '<a  href="' . esc_url($action_url) . '" class="button gray ' . esc_attr($action) . ' listeo_core-dashboard-action-' . esc_attr($action) . '">';
