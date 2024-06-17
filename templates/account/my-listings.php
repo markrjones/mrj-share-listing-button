@@ -257,8 +257,10 @@ $max_num_pages = $data->ids->max_num_pages;
 										} 
 
 										error_log($action_url);
+										$option = get_option( 'mrjslb_plugin_options', array( "page_name" => "quickbook" ));
+										
 										if ($action == 'share'){
-											$action_url = site_url() . '/quickbook/?id=' . $listing_id;
+											$action_url = site_url() . '/' . $option['page_name'] . '/?id=' . $listing_id;
 										}
 
 										echo '<a  href="' . esc_url($action_url) . '" class="button gray ' . esc_attr($action) . ' listeo_core-dashboard-action-' . esc_attr($action) . '">';
